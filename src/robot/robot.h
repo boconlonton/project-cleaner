@@ -24,19 +24,19 @@ class Cleaner
 
     public:
 
-    void setMap(Map requirements)
+    void SetMap(Map requirements)
     {   
         this->data = requirements;
     }
 
-    void getCurrent()
+    void GetCurrent()
     {
         cout << "(" << this->current->position.x << "," << this->current->position.y << ")";
         cout << "Direction: " << current->direction;
         cout << endl;
     }
 
-    void setDirection(int x, int y, int direction)
+    void SetDirection(int x, int y, int direction)
     {
         this->current = new Direction;
         this->current->position.x = x;
