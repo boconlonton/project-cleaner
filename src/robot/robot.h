@@ -31,8 +31,22 @@ class Cleaner
 
     void GetCurrent()
     {
-        cout << "(" << this->current->position.x << "," << this->current->position.y << ")";
-        cout << "Direction: " << current->direction;
+        cout << "(" << this->current->position.x << "," << this->current->position.y << ")" << "\t";
+        switch (current->direction)
+        {
+            case 0:
+                cout << "Direction: " << "North";
+                break;
+            case 1:
+                cout << "Direction: " << "East";
+                break;
+            case 2:
+                cout << "Direction: " << "South";
+                break;
+            case 3:
+                cout << "Direction: " << "West";
+                break;
+        }
         cout << endl;
     }
 
