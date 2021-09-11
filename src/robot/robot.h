@@ -24,9 +24,9 @@ class Cleaner
 
     public:
 
-    void SetMap(Map requirements)
+    void SetMap(Map input)
     {   
-        this->data = requirements;
+        this->data = input;
     }
 
     void GetCurrent()
